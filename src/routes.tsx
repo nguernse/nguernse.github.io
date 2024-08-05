@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 
 import RootLayout from "./layouts/RootLayout";
 
@@ -6,7 +6,7 @@ import HomePage from "./pages/Home";
 import NotFoundPage from "./pages/404";
 import ProjectsPage from "./pages/Projects";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     element: <RootLayout />,
     children: [
