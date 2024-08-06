@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { useMemo } from "react";
-import { Bio } from "../../@types/Bio";
+import { Bio } from "../../@types";
 
 type Props = {
   status?: Bio["jobStatus"];
@@ -19,8 +19,9 @@ export default function JobStatus({ status = "employed" }: Props) {
 
   return (
     <div
+      data-testid="job-status"
       className={clsx(
-        "rounded-full px-3 py-1 text-sm flex items-center justify-between gap-x-2",
+        "rounded-full p-1 md:px-3 md:py-1 text-sm flex items-center justify-between gap-x-2",
         {
           "bg-green-200 text-green-700 font-medium": status === "available",
           "bg-slate-200 text-slate-600 font-medium": status !== "available",
@@ -40,7 +41,7 @@ export default function JobStatus({ status = "employed" }: Props) {
           />
         )}
       </div>
-      <span>{phrase}</span>
+      <span className="hidden md:inline-block">{phrase}</span>
     </div>
   );
 }
