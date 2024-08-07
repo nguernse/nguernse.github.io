@@ -4,7 +4,22 @@ import BioFooter from "./BioFooter";
 
 describe("Bio Footer", () => {
   test("renders", () => {
-    render(<BioFooter />);
+    render(
+      <BioFooter
+        socials={{
+          linkedin: {
+            label: "LinkedIn",
+            image: "/assets/linkedin.png",
+            url: "https://linkedin.com/in/jd",
+          },
+          github: {
+            label: "GitHub",
+            image: "/assets/github.svg",
+            url: "https://github.com/jd",
+          },
+        }}
+      />
+    );
 
     expect(screen.getByRole("contentinfo")).toBeInTheDocument();
     expect(screen.getByText("LinkedIn")).toBeInTheDocument();

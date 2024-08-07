@@ -2,17 +2,20 @@ import { Bio } from "../@types";
 
 export const BIO: Bio = {
   name: 'Nick Guernsey',
-  about: "Software Engineer that enjoys working on the Frontend and continually learning new things",
+  about: "Software engineer with experience developing, maintaining, and supporting SaaS applications.",
+  profile: "/assets/profile.jpeg",
   jobStatus: 'available',
   jobTitle: 'Software Engineer',
   socials: {
     linkedin: {
       label: "Let's connect",
       url: "https://linkedin.com/in/nguernse",
+      image: "/assets/linkedin.png"
     },
     github: {
       label: "GitHub",
       url: "https://github.com/nguernse",
+      image: "/assets/github.svg"
     },
   },
   skills: [

@@ -25,6 +25,7 @@ export type Technologies =
 export type Social = {
   label: string;
   url: string;
+  image: string;
 }
 
 export type Project = {
@@ -37,6 +38,7 @@ export type Project = {
 export type Bio = {
   name: string;
   about: string;
+  profile: string;
   jobStatus: "available" | "employed";
   jobTitle: string;
   socials: Record<string, Social>;
