@@ -1,5 +1,6 @@
 import JobStatus from "../JobStatus/JobStatus";
 import { Bio } from "../../@types";
+import Avatar from "../Avatar/Avatar";
 
 type Props = {
   name: Bio["name"];
@@ -27,15 +28,11 @@ export default function BioHeader({
       </div>
 
       <div className="flex flex-col md:flex-row md:gap-x-[40px]">
-        <div className="md:order-1 h-[150px] w-[150px] border-[15px] border-slate-100 rounded-full mx-auto shrink-0">
-          <img
-            src={profile}
-            alt="Profile pic"
-            width={150}
-            height={150}
-            className="w-full h-full object-cover rounded-full"
-          />
-        </div>
+        <Avatar
+          path={profile}
+          size="xl"
+          className="md:order-1 mx-auto shrink-0 border-[15px] border-slate-100"
+        />
 
         <div>
           <h1 className="font-display font-bold text-2xl md:text-4xl text-slate-900 text-center md:text-left">
