@@ -156,7 +156,7 @@ export const BIO: Bio = {
     {
       logo: "/assets/ddu_logo.svg",
       slug: 'down-down-up',
-      url: "https://downdownup.pages.dev/",
+      url: "https://nguernse.github.io/downdownup/",
       title: 'Down Down Up',
       blurb: 'A game to test your keyboard skills',
       details: [
