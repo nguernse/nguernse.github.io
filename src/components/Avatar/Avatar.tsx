@@ -5,9 +5,15 @@ type Props = {
   path: string;
   size?: "small" | "medium" | "large" | "xl";
   className?: string;
+  alt: string;
 };
 
-export default function Avatar({ path, size = "medium", className }: Props) {
+export default function Avatar({
+  path,
+  size = "medium",
+  alt,
+  className,
+}: Props) {
   const dimensions = useMemo(() => {
     switch (size) {
       case "xl":
@@ -35,6 +41,7 @@ export default function Avatar({ path, size = "medium", className }: Props) {
         height={dimensions}
         width={dimensions}
         className="w-full h-full rounded-full object-fit"
+        alt={alt}
       />
     </div>
   );
