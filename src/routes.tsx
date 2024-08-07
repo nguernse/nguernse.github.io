@@ -9,6 +9,7 @@ import PageLayout from "./layouts/PageLayout";
 import ProjectPage from "./pages/Projects/[id]/ProjectPage";
 import ErrorPage from "./pages/ErrorPage";
 import projectLoader from "./pages/Projects/[id]/ProjectPage.loader";
+import AboutPage from "./pages/About";
 
 const router = createHashRouter([
   {
@@ -20,6 +21,10 @@ const router = createHashRouter([
     element: <PageLayout />,
     errorElement: <ErrorPage />,
     children: [
+      {
+        path: "/about",
+        element: <AboutPage />,
+      },
       {
         path: "/projects",
         element: <ProjectsPage />,
