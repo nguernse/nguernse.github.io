@@ -8,7 +8,7 @@ import { BIO } from "../utils/constants";
 export default function AboutPage() {
   return (
     <div className="bg-white border rounded p-4 md:p-8">
-      <header>
+      <header className="mb-4">
         <Avatar
           path={BIO.profile}
           size="large"
@@ -28,7 +28,9 @@ export default function AboutPage() {
         )}
 
         <FunStatement yearsExperience={BIO.yearsExperience} />
+      </section>
 
+      <section className="mb-4">
         <div className="flex justify-center md:justify-normal gap-x-2">
           <a
             className="px-3 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded flex items-center gap-x-2"
