@@ -1,11 +1,8 @@
 import { Outlet } from "react-router-dom";
-import Navigation from "../components/Navigation/Navigation";
 
 export default function RootLayout() {
   return (
-    <div>
-      <Navigation />
-
+    <div className="max-w-screen-md mx-auto">
       <main className="p-5">
         <Outlet />
       </main>

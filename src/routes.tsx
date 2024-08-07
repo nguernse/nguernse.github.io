@@ -5,12 +5,16 @@ import RootLayout from "./layouts/RootLayout";
 import HomePage from "./pages/Home";
 import NotFoundPage from "./pages/404";
 import ProjectsPage from "./pages/Projects";
+import PageLayout from "./layouts/PageLayout";
 
 const router = createHashRouter([
   {
     element: <RootLayout />,
+    children: [{ path: "/", element: <HomePage /> }],
+  },
+  {
+    element: <PageLayout />,
     children: [
-      { path: "/", element: <HomePage /> },
       { path: "/projects", element: <ProjectsPage /> },
       { path: "*", element: <NotFoundPage /> },
     ],

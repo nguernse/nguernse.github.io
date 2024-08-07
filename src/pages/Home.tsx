@@ -1,7 +1,9 @@
+import Bio from "../components/Bio/Bio";
+
 export default function HomePage() {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="bg-white rounded-md border p-4">
+      <Bio />
     </div>
   );
 }
