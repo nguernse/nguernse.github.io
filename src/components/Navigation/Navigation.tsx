@@ -2,13 +2,19 @@ import { Link } from "react-router-dom";
 
 export default function Navigation() {
   return (
-    <nav className="flex bg-white mb-2 p-5 rounded shadow">
+    <nav className="flex bg-white p-5 rounded shadow">
+      <Link to="/" className="mx-2 hover:text-blue-500">
+        Home
+      </Link>
+
       <ul className="ml-auto flex gap-x-2">
         <li>
-          <Link to="/" className="mx-2 hover:text-sky-500">
-            Home
+          <Link to="/about" className="mx-2 hover:text-blue-500">
+            About
           </Link>
-          <Link to="/projects" className="mx-2 hover:text-sky-500">
+        </li>
+        <li>
+          <Link to="/projects" className="mx-2 hover:text-blue-500">
             Projects
           </Link>
         </li>
