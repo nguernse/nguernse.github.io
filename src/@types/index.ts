@@ -11,6 +11,7 @@ export type Technologies =
   | "Vite"
   | "Vitest"
   | "Git"
+  | "GitHub"
   | "React Testing Library"
   | "Cypress"
   | "MongoDB"
@@ -20,7 +21,8 @@ export type Technologies =
   | "Vercel"
   | "AWS"
   | "RadixUI"
-  | "ShadCN";
+  | "ShadCN"
+  | "Leaflet";
 
 export type Social = {
   label: string;
@@ -28,22 +30,53 @@ export type Social = {
   image: string;
 }
 
+export type ProjectImages = {
+  alt: string;
+  mobile: {
+    webp: string;
+    jpeg: string;
+  },
+  tablet: {
+    webp: string;
+    jpeg: string;
+  }
+};
+
 export type Project = {
+  logo: string;
   title: string;
   blurb: string;
   tags?: string[];
-  technologies?: Technologies[];
+  technologies: Technologies[];
   slug: string;
   url: string;
+  images: ProjectImages[];
+  details: string[];
 };
 
-export type Bio = {
-  name: string;
-  about: string;
-  profile: string;
-  jobStatus: "available" | "employed";
-  jobTitle: string;
-  socials: Record<string, Social>;
-  projects: Project[];
-  skills: Technologies[];
-}
+export type Bio =
+  | {
+    name: string;
+    about: string;
+    profile: string;
+    jobStatus: "available";
+    jobTitle: string;
+    yearsExperience: number;
+    jobLocations: string[];
+    socials: Record<string, Social>;
+    projects: Project[];
+    skills: Technologies[];
+  }
+  | {
+    name: string;
+    about: string;
+    profile: string;
+    jobStatus: "employed";
+    jobTitle: string;
+    currentEmployer: string;
+    yearsExperience: number;
+    jobLocations: string[];
+    socials: Record<string, Social>;
+    projects: Project[];
+    skills: Technologies[];
+  }
