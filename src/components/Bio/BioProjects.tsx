@@ -14,7 +14,7 @@ export default function BioProjects({ projects }: Props) {
       className="p-4 md:p-8 bg-slate-100 rounded mb-4"
     >
       <div className="flex justify-between items-center">
-        <h2 className="text-2xl mb-3 text-slate-600">Projects</h2>
+        <h2 className="font-display text-2xl mb-3 text-slate-600">Projects</h2>
 
         <Link
           to="/projects"

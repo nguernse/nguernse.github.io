@@ -4,7 +4,7 @@ import { BIO } from "../../utils/constants";
 export default function ProjectsPage() {
   return (
     <div className="bg-white border rounded p-4">
-      <h1 className="text-xl text-slate-800 mb-3">Projects</h1>
+      <h1 className="font-display text-xl text-slate-800 mb-3">Projects</h1>
 
       <section
         data-testid="project-list"

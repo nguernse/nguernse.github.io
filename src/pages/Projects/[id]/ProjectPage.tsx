@@ -7,7 +7,9 @@ export default function ProjectPage() {
 
   return (
     <div className="bg-white rounded border p-3">
-      <h1 className="font-bold text-4xl text-slate-700">{project.title}</h1>
+      <h1 className="font-display font-bold text-4xl text-slate-700">
+        {project.title}
+      </h1>
       <p>{project.blurb}</p>
       <a
         href={project.url}

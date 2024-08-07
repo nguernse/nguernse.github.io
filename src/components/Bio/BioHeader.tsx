@@ -38,7 +38,7 @@ export default function BioHeader({
         </div>
 
         <div>
-          <h1 className="font-bold text-2xl md:text-4xl text-slate-900 text-center md:text-left">
+          <h1 className="font-display font-bold text-2xl md:text-4xl text-slate-900 text-center md:text-left">
             {name}
           </h1>
 
