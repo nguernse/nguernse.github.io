@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Project } from "../../@types";
 import { ChevronRight } from "lucide-react";
 import Avatar from "../Avatar/Avatar";
+import Badge from "../Badge/Badge";
 
 type Props = {
   project: Project;
@@ -25,12 +26,7 @@ export default function ProjectLink({ project }: Props) {
           className="hidden md:flex md:flex-wrap md:gap-1 md:mt-2"
         >
           {project.technologies?.slice(0, 3).map((tech) => (
-            <span
-              key={tech}
-              className="bg-slate-100 text-slate-500 font-medium rounded-full px-3 py-1 text-xs"
-            >
-              {tech}
-            </span>
+            <Badge key={tech}>{tech}</Badge>
           ))}
         </div>
       </div>

@@ -3,6 +3,7 @@ import { Project } from "../../../@types";
 import { ExternalLink } from "lucide-react";
 import Avatar from "../../../components/Avatar/Avatar";
 import Paragraph from "../../../components/Paragraph";
+import Badge from "../../../components/Badge/Badge";
 
 export default function ProjectPage() {
   const project = useLoaderData() as Project;
@@ -58,12 +59,7 @@ export default function ProjectPage() {
 
         <div className="flex flex-wrap gap-2">
           {project.technologies?.map((tech) => (
-            <span
-              key={tech}
-              className="bg-slate-500 text-white rounded-full px-3 py-1 text-sm"
-            >
-              {tech}
-            </span>
+            <Badge key={tech}>{tech}</Badge>
           ))}
         </div>
       </section>

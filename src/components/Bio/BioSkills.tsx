@@ -1,4 +1,5 @@
 import { Bio } from "../../@types";
+import Badge from "../Badge/Badge";
 
 type Props = {
   skills: Bio["skills"];
@@ -14,12 +15,9 @@ export default function BioSkills({ skills }: Props) {
 
       <div className="flex flex-wrap gap-2">
         {skills.map((skill) => (
-          <span
-            key={skill}
-            className="bg-blue-500 text-white rounded-full px-3 py-1 text-sm"
-          >
+          <Badge key={skill} variant="primary">
             {skill}
-          </span>
+          </Badge>
         ))}
       </div>
     </section>
