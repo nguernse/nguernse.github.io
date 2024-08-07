@@ -30,6 +30,7 @@ export default function BioHeader({
       <div className="flex flex-col md:flex-row md:gap-x-[40px]">
         <Avatar
           path={profile}
+          alt={name}
           size="xl"
           className="md:order-1 mx-auto shrink-0 border-[15px] border-slate-100"
         />
