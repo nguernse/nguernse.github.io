@@ -10,16 +10,22 @@ const projects: Project[] = [
     title: "Project 1",
     blurb: "This is project 1",
     technologies: ["TypeScript", "React", "NextJS", "TailwindCSS"],
+    url: "https://example.com",
+    slug: "project-1",
   },
   {
     title: "Project 2",
     blurb: "This is project 2",
     technologies: ["TypeScript", "React", "NextJS", "TailwindCSS"],
+    url: "https://example.com",
+    slug: "project-2",
   },
   {
     title: "Project 3",
     blurb: "This is project 3",
     technologies: ["TypeScript", "React", "NextJS", "TailwindCSS"],
+    url: "https://example.com",
+    slug: "project-3",
   },
 ];
 

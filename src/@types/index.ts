@@ -33,6 +33,8 @@ export type Project = {
   blurb: string;
   tags?: string[];
   technologies?: Technologies[];
+  slug: string;
+  url: string;
 };
 
 export type Bio = {

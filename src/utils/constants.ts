@@ -33,6 +33,8 @@ export const BIO: Bio = {
   ],
   projects: [
     {
+      slug: 'project-national-parks',
+      url: "https://projectnationalparks.com",
       title: 'Project National Parks',
       blurb: 'Explore the natural beauty of the National Parks',
       technologies: [
@@ -40,6 +42,8 @@ export const BIO: Bio = {
       ]
     },
     {
+      slug: 'power-searches',
+      url: "https://powersearches.org",
       title: 'Power Searches',
       blurb: 'Find the information you want with curated search shortcuts.',
       technologies: [
@@ -47,6 +51,8 @@ export const BIO: Bio = {
       ]
     },
     {
+      slug: 'down-down-up',
+      url: "https://downdownup.pages.dev/",
       title: 'Down Down Up',
       blurb: 'A game to test your keyboard skills',
       technologies: [
