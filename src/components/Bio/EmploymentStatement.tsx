@@ -1,11 +1,13 @@
+import Paragraph from "../Paragraph";
+
 type Props = {
   employer: string;
 };
 
 export default function EmployedStatement({ employer }: Props) {
   return (
-    <p className="mb-2">
+    <Paragraph>
       I am currently employed and happily pushing code for {employer}.
-    </p>
+    </Paragraph>
   );
 }

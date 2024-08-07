@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import { Project } from "../../../@types";
 import { ExternalLink } from "lucide-react";
 import Avatar from "../../../components/Avatar/Avatar";
+import Paragraph from "../../../components/Paragraph";
 
 export default function ProjectPage() {
   const project = useLoaderData() as Project;
@@ -15,7 +16,7 @@ export default function ProjectPage() {
           {project.title}
         </h1>
 
-        <p className="text-slate-500">{project.blurb}</p>
+        <Paragraph>{project.blurb}</Paragraph>
 
         <a
           href={project.url}
@@ -29,9 +30,7 @@ export default function ProjectPage() {
 
       <section className="text-slate-600 mb-4">
         {project.details?.map((detail, index) => (
-          <p key={index} className="mb-2">
-            {detail}
-          </p>
+          <Paragraph key={index}>{detail}</Paragraph>
         ))}
       </section>
 

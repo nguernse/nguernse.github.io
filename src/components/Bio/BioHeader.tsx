@@ -1,6 +1,7 @@
 import JobStatus from "../JobStatus/JobStatus";
 import { Bio } from "../../@types";
 import Avatar from "../Avatar/Avatar";
+import Paragraph from "../Paragraph";
 
 type Props = {
   name: Bio["name"];
@@ -40,9 +41,9 @@ export default function BioHeader({
             {name}
           </h1>
 
-          <p className="text-slate-600 my-3 text-base md:text-lg text-center md:text-left">
+          <Paragraph className="my-3 text-base md:text-lg text-center md:text-left">
             {about}
-          </p>
+          </Paragraph>
 
           <div className="flex justify-center md:justify-normal gap-x-2">
             <a

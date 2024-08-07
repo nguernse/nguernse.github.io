@@ -1,4 +1,5 @@
 import { isRouteErrorResponse, Link, useRouteError } from "react-router-dom";
+import Paragraph from "../components/Paragraph";
 
 export default function ErrorPage() {
   const error = useRouteError();
@@ -19,7 +20,7 @@ export default function ErrorPage() {
           <h1 className="font-display text-4xl font-bold text-slate-700">
             {error.status}
           </h1>
-          <p className="font-medium text-lg">{message}</p>
+          <Paragraph className="font-medium text-lg">{message}</Paragraph>
 
           <Link
             to="/"
@@ -38,7 +39,7 @@ export default function ErrorPage() {
         <h1 className="font-display text-4xl font-bold text-slate-700">
           Error
         </h1>
-        <p className="font-medium text-lg">{message}</p>
+        <Paragraph className="font-medium text-lg">{message}</Paragraph>
 
         <Link
           to="/"
