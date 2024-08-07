@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import { Project } from "../../../@types";
 import { ExternalLink } from "lucide-react";
 import Avatar from "../../../components/Avatar/Avatar";
-import Paragraph from "../../../components/Paragraph";
+import Paragraph from "../../../components/Paragraph/Paragraph";
 import Badge from "../../../components/Badge/Badge";
 
 export default function ProjectPage() {

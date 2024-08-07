@@ -1,5 +1,5 @@
 import { isRouteErrorResponse, Link, useRouteError } from "react-router-dom";
-import Paragraph from "../components/Paragraph";
+import Paragraph from "../components/Paragraph/Paragraph";
 
 export default function ErrorPage() {
   const error = useRouteError();

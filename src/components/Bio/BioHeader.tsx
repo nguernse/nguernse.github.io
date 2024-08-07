@@ -1,7 +1,7 @@
 import JobStatus from "../JobStatus/JobStatus";
 import { Bio } from "../../@types";
 import Avatar from "../Avatar/Avatar";
-import Paragraph from "../Paragraph";
+import Paragraph from "../Paragraph/Paragraph";
 
 type Props = {
   name: Bio["name"];
