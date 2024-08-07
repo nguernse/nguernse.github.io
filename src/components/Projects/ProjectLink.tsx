@@ -15,7 +15,7 @@ export default function ProjectLink({ project }: Props) {
         group/project bg-white rounded-md border p-3 shadow mb-3 flex flex-col gap-y-2
         md:flex-row md:gap-x-4 md:gap-y-0 md:items-center md:hover:shadow-md"
     >
-      <Avatar path={project.logo} className="self-start" />
+      <Avatar path={project.logo} className="self-start" alt={project.title} />
 
       <div>
         <div className="font-medium text-slate-700">{project.title}</div>
