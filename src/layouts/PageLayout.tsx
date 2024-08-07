@@ -12,7 +12,7 @@ export default function PageLayout() {
       </main>
 
       <footer className="p-4 md:p-8 flex flex-row justify-between text-slate-400">
-        <span>&copy; 2025</span>
+        <span>&copy; 2025 NG</span>
 
         <div>
           <a
