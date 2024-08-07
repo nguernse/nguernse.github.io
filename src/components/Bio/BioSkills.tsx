@@ -1,5 +1,6 @@
 import { Bio } from "../../@types";
 import Badge from "../Badge/Badge";
+import Section from "../Section/Section";
 
 type Props = {
   skills: Bio["skills"];
@@ -7,12 +8,12 @@ type Props = {
 
 export default function BioSkills({ skills }: Props) {
   return (
-    <section
-      data-testid="bio-skills"
-      className="p-4 md:p-8 bg-slate-100 rounded mb-4"
+    <Section
+      testid="bio-skills"
+      variant="light"
+      title="Tools"
+      className="md:p-8"
     >
-      <h2 className="font-display text-2xl mb-3 text-slate-600">Tools</h2>
-
       <div className="flex flex-wrap gap-2">
         {skills.map((skill) => (
           <Badge key={skill} variant="primary">
@@ -20,6 +21,6 @@ export default function BioSkills({ skills }: Props) {
           </Badge>
         ))}
       </div>
-    </section>
+    </Section>
   );
 }

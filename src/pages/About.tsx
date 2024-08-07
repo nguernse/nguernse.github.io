@@ -3,6 +3,7 @@ import Badge from "../components/Badge/Badge";
 import AvailableStatement from "../components/Bio/AvailableStatement";
 import EmployedStatement from "../components/Bio/EmploymentStatement";
 import FunStatement from "../components/Bio/FunStatement";
+import Section from "../components/Section/Section";
 import { BIO } from "../utils/constants";
 
 export default function AboutPage() {
@@ -20,7 +21,7 @@ export default function AboutPage() {
         </h1>
       </header>
 
-      <section className="mb-4">
+      <Section>
         {BIO.jobStatus === "available" ? (
           <AvailableStatement locations={BIO.jobLocations} />
         ) : (
@@ -28,9 +29,9 @@ export default function AboutPage() {
         )}
 
         <FunStatement yearsExperience={BIO.yearsExperience} />
-      </section>
+      </Section>
 
-      <section className="mb-4">
+      <Section>
         <div className="flex justify-center md:justify-normal gap-x-2">
           <a
             className="px-3 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded flex items-center gap-x-2"
@@ -54,16 +55,9 @@ export default function AboutPage() {
             </span>
           </a>
         </div>
-      </section>
+      </Section>
 
-      <section
-        data-testid="bio-skills"
-        className="p-4 bg-slate-100 rounded mb-4"
-      >
-        <h2 className="font-display text-2xl mb-3 text-slate-600">
-          This Site Uses
-        </h2>
-
+      <Section variant="light" title="This Site Uses">
         <div className="flex flex-wrap gap-2">
           {[
             "React",
@@ -81,7 +75,7 @@ export default function AboutPage() {
             </Badge>
           ))}
         </div>
-      </section>
+      </Section>
     </div>
   );
 }

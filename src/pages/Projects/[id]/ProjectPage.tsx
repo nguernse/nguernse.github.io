@@ -4,6 +4,7 @@ import { ExternalLink } from "lucide-react";
 import Avatar from "../../../components/Avatar/Avatar";
 import Paragraph from "../../../components/Paragraph/Paragraph";
 import Badge from "../../../components/Badge/Badge";
+import Section from "../../../components/Section/Section";
 
 export default function ProjectPage() {
   const project = useLoaderData() as Project;
@@ -29,13 +30,13 @@ export default function ProjectPage() {
         </a>
       </header>
 
-      <section className="text-slate-600 mb-4">
+      <Section>
         {project.details?.map((detail, index) => (
           <Paragraph key={index}>{detail}</Paragraph>
         ))}
-      </section>
+      </Section>
 
-      <section className="mb-4">
+      <Section>
         {project.images?.map((image, index) => (
           <picture key={index}>
             <source media="(max-width: 767px)" srcSet={image.mobile.jpeg} />
@@ -50,13 +51,9 @@ export default function ProjectPage() {
             />
           </picture>
         ))}
-      </section>
+      </Section>
 
-      <section className="p-4 md:p-8 bg-slate-100 rounded mb-4">
-        <h2 className="font-display text-2xl mb-3 text-slate-700">
-          Technologies Used
-        </h2>
-
+      <Section title="Technologies Used" variant="light">
         <div className="flex flex-wrap gap-2">
           {project.technologies?.map((tech) => (
             <Badge key={tech} variant="secondary">
@@ -64,7 +61,7 @@ export default function ProjectPage() {
             </Badge>
           ))}
         </div>
-      </section>
+      </Section>
     </div>
   );
 }

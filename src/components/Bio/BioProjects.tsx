@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { MoveRight } from "lucide-react";
 import { Bio } from "../../@types";
 import ProjectLink from "../Projects/ProjectLink";
+import Section from "../Section/Section";
 
 type Props = {
   projects: Bio["projects"];
@@ -9,10 +10,7 @@ type Props = {
 
 export default function BioProjects({ projects }: Props) {
   return (
-    <section
-      data-testid="bio-projects"
-      className="p-4 md:p-8 bg-slate-100 rounded mb-4"
-    >
+    <Section testid="bio-projects" variant="light" className="md:p-8">
       <div className="flex justify-between items-center">
         <h2 className="font-display text-2xl mb-3 text-slate-600">Projects</h2>
 
@@ -30,6 +28,6 @@ export default function BioProjects({ projects }: Props) {
           <ProjectLink project={project} key={project.slug} />
         ))}
       </div>
-    </section>
+    </Section>
   );
 }
