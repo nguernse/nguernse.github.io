@@ -1,6 +1,7 @@
 import Avatar from "../components/Avatar/Avatar";
 import Badge from "../components/Badge/Badge";
 import AvailableStatement from "../components/Bio/AvailableStatement";
+import BioSocials from "../components/Bio/BioSocials";
 import EmployedStatement from "../components/Bio/EmploymentStatement";
 import FunStatement from "../components/Bio/FunStatement";
 import Section from "../components/Section/Section";
@@ -32,29 +33,7 @@ export default function AboutPage() {
       </Section>
 
       <Section>
-        <div className="flex justify-center md:justify-normal gap-x-2">
-          <a
-            className="px-3 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded flex items-center gap-x-2"
-            href={BIO.socials.linkedin.url}
-            target="_blank"
-          >
-            <img src={BIO.socials.linkedin.image} width={18} height={18} />
-            <span className="hidden md:inline-block">
-              {BIO.socials.linkedin.label}
-            </span>
-          </a>
-
-          <a
-            className="px-3 py-2 bg-white hover:bg-slate-100 border rounded flex items-center gap-x-2"
-            href={BIO.socials.github.url}
-            target="_blank"
-          >
-            <img src={BIO.socials.github.image} width={18} height={18} />
-            <span className="hidden md:inline-block">
-              {BIO.socials.github.label}
-            </span>
-          </a>
-        </div>
+        <BioSocials socials={BIO.socials} />
       </Section>
 
       <Section variant="light" title="This Site Uses">
