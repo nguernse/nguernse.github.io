@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Project } from "../../@types";
 import { ChevronRight } from "lucide-react";
+import Avatar from "../Avatar/Avatar";
 
 type Props = {
   project: Project;
@@ -14,7 +15,8 @@ export default function ProjectLink({ project }: Props) {
         group/project bg-white rounded-md border p-3 shadow mb-3 flex flex-col gap-y-2
         md:flex-row md:gap-x-4 md:gap-y-0 md:items-center md:hover:shadow-md"
     >
-      <div className="w-[40px] md:w-[50px] h-[40px] md:h-[50px] bg-slate-500 rounded-full self-start" />
+      <Avatar path={project.logo} className="self-start" />
+
       <div>
         <div className="font-medium text-slate-700">{project.title}</div>
         <div className="text-slate-500">{project.blurb}</div>
