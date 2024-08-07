@@ -59,7 +59,9 @@ export default function ProjectPage() {
 
         <div className="flex flex-wrap gap-2">
           {project.technologies?.map((tech) => (
-            <Badge key={tech}>{tech}</Badge>
+            <Badge key={tech} variant="secondary">
+              {tech}
+            </Badge>
           ))}
         </div>
       </section>
