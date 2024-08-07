@@ -23,8 +23,8 @@ export default function JobStatus({ status = "employed" }: Props) {
       className={clsx(
         "rounded-full p-1 md:px-3 md:py-1 text-sm flex items-center justify-between gap-x-2",
         {
-          "bg-green-200 text-green-700 font-medium": status === "available",
-          "bg-slate-200 text-slate-600 font-medium": status !== "available",
+          "bg-green-200 text-green-900 font-medium": status === "available",
+          "bg-slate-200 text-slate-900 font-medium": status !== "available",
         }
       )}
     >

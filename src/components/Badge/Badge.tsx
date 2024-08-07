@@ -18,9 +18,9 @@ export default function Badge({
       className={clsx(
         "font-medium rounded-full px-3 py-1 text-xs",
         {
-          "bg-slate-100 text-slate-500 ": variant === "default",
-          "bg-slate-500 text-white ": variant === "secondary",
-          "bg-blue-500 text-white": variant === "primary",
+          "bg-slate-100 text-slate-700 ": variant === "default",
+          "bg-slate-700 text-white ": variant === "secondary",
+          "bg-blue-700 text-white": variant === "primary",
         },
         className
       )}

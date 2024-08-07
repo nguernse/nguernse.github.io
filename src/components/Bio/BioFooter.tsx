@@ -6,7 +6,7 @@ type Props = {
 
 export default function BioFooter({ socials }: Props) {
   return (
-    <footer className="p-4 md:p-8 bg-slate-50 rounded flex flex-col md:flex-row md:justify-between text-slate-400">
+    <footer className="p-4 md:p-8 bg-slate-50 rounded flex flex-col md:flex-row md:justify-between text-slate-700">
       <span>&copy; 2025</span>
 
       <div>

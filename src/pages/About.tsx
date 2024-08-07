@@ -34,7 +34,7 @@ export default function AboutPage() {
       <Section>
         <div className="flex justify-center md:justify-normal gap-x-2">
           <a
-            className="px-3 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded flex items-center gap-x-2"
+            className="px-3 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded flex items-center gap-x-2"
             href={BIO.socials.linkedin.url}
             target="_blank"
           >

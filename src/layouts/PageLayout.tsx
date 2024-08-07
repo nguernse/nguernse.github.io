@@ -11,7 +11,7 @@ export default function PageLayout() {
         <Outlet />
       </main>
 
-      <footer className="p-4 md:p-8 flex flex-row justify-between text-slate-400">
+      <footer className="p-4 md:p-8 flex flex-row justify-between text-slate-700">
         <span>&copy; 2025 NG</span>
 
         <div>

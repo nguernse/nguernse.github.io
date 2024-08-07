@@ -24,7 +24,7 @@ export default function ErrorPage() {
 
           <Link
             to="/"
-            className="inline-block px-3 py-2 rounded bg-blue-500 text-white"
+            className="inline-block px-3 py-2 rounded bg-blue-700 text-white"
           >
             Return Home
           </Link>
@@ -43,7 +43,7 @@ export default function ErrorPage() {
 
         <Link
           to="/"
-          className="inline-block px-3 py-2 rounded bg-blue-500 text-white"
+          className="inline-block px-3 py-2 rounded bg-blue-700 text-white"
         >
           Return Home
         </Link>
