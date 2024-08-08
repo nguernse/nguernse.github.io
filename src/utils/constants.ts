@@ -8,15 +8,13 @@ export const BIO: Bio = {
   jobTitle: 'Software Engineer',
   yearsExperience: 3,
   jobLocations: [
-    'Knoxville',
-    'Denver',
-    'Colorado Springs',
-    'Seattle',
-    'Los Angeles',
-    'San Francisco',
-    'Tulsa',
-    'Charlotte',
-    'Raleigh',
+    'Tennessee',
+    'North Carolina',
+    'Colorado',
+    'Washington',
+    'California',
+    'Utah',
+    'Oklahoma',
   ],
   socials: {
     linkedin: {
