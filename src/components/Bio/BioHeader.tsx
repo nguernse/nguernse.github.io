@@ -3,6 +3,7 @@ import { Bio } from "../../@types";
 import Avatar from "../Avatar/Avatar";
 import Paragraph from "../Paragraph/Paragraph";
 import BioSocials from "./BioSocials";
+import { Link } from "react-router-dom";
 
 type Props = {
   name: Bio["name"];
@@ -30,12 +31,14 @@ export default function BioHeader({
       </div>
 
       <div className="flex flex-col md:flex-row md:gap-x-[40px]">
-        <Avatar
-          path={profile}
-          alt={name}
-          size="xl"
-          className="md:order-1 mx-auto shrink-0 border-[15px] border-gray-100 dark:border-gray-700"
-        />
+        <Link to="/about" className="md:order-1 mx-auto shrink-0 rounded-full">
+          <Avatar
+            path={profile}
+            alt={name}
+            size="xl"
+            className="border-[15px] border-gray-100 dark:border-gray-700"
+          />
+        </Link>
 
         <div>
           <h1 className="font-display font-bold text-2xl md:text-4xl text-gray-900 text-center md:text-left dark:text-white">
