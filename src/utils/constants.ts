@@ -2,7 +2,7 @@ import { Bio } from "../@types";
 
 export const BIO: Bio = {
   name: 'Nick Guernsey',
-  about: "Software engineer with experience developing, maintaining, and supporting SaaS applications.",
+  about: "Software engineer with experience developing and supporting SaaS web applications.",
   profile: "/assets/profile.jpeg",
   jobStatus: 'available',
   jobTitle: 'Software Engineer',
@@ -29,17 +29,57 @@ export const BIO: Bio = {
     },
   },
   skills: [
-    "TypeScript",
     "JavaScript",
-    "CSS",
-    "Git",
-    "SCSS",
-    "TailwindCSS",
+    "TypeScript",
     "React",
     "Vue",
     "HTML",
+    "CSS",
+    "SCSS",
+    "TailwindCSS",
+    "NodeJS",
+    "Express",
+    "Git",
+    "Vitest",
+    "MongoDB",
     "SQL",
-    "Vitest"
+    "Docker",
+    "Python"
+  ],
+  workExperience: [
+    {
+      company: "Reviewbox | Talkwalker",
+      positions: [
+        { title: 'Software Engineer', startDate: 'Sep 2021', endDate: 'Aug 2023' },
+        { title: 'Frontend Engineer', startDate: 'Jan 2021', endDate: 'Sep 2021' },
+      ]
+    },
+    {
+      company: "StoragePug",
+      positions: [
+        { title: 'Frontend Engineer', startDate: 'Mar 2020', endDate: 'Jan 2021' }
+      ]
+    },
+    {
+      company: "Reviewbox | Talkwalker",
+      positions: [
+        { title: 'Software Engineer', startDate: 'Feb 2019', endDate: 'Mar 2020' },
+      ]
+    },
+    {
+      company: "Oak Ridge National Lab",
+      positions: [
+        { title: 'Web Developer Intern', startDate: 'Jan 2017', endDate: 'May 2018' }
+      ]
+    },
+  ],
+  volunteerExperience: [
+    {
+      organization: "Tulsa Web Devs",
+      position: "Code Contributor",
+      startDate: "2024",
+      endDate: "Present"
+    }
   ],
   projects: [
     {
