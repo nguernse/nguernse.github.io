@@ -11,7 +11,7 @@ export default function BioSkills({ skills }: Props) {
     <Section
       testid="bio-skills"
       variant="light"
-      title="Tools"
+      title="Skills"
       className="md:p-8"
     >
       <div className="flex flex-wrap gap-2">
