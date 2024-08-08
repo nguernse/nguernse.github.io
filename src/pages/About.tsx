@@ -4,12 +4,13 @@ import AvailableStatement from "../components/Bio/AvailableStatement";
 import BioSocials from "../components/Bio/BioSocials";
 import EmployedStatement from "../components/Bio/EmploymentStatement";
 import FunStatement from "../components/Bio/FunStatement";
+import PageWrapper from "../components/PageWrapper/PageWrapper";
 import Section from "../components/Section/Section";
 import { BIO } from "../utils/constants";
 
 export default function AboutPage() {
   return (
-    <div className="bg-white border rounded p-4 md:p-8">
+    <PageWrapper title="NG | About">
       <header className="mb-4">
         <Avatar
           path={BIO.profile}
@@ -17,7 +18,7 @@ export default function AboutPage() {
           className="mb-2"
           alt={BIO.name}
         />
-        <h1 className="font-display text-4xl font-bold text-slate-800">
+        <h1 className="font-display text-4xl font-bold text-gray-800 dark:text-white">
           About
         </h1>
       </header>
@@ -55,6 +56,6 @@ export default function AboutPage() {
           ))}
         </div>
       </Section>
-    </div>
+    </PageWrapper>
   );
 }

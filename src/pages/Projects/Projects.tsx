@@ -1,19 +1,20 @@
+import PageWrapper from "../../components/PageWrapper/PageWrapper";
 import ProjectLink from "../../components/Projects/ProjectLink";
+import Section from "../../components/Section/Section";
 import { BIO } from "../../utils/constants";
 
 export default function ProjectsPage() {
   return (
-    <div className="bg-white border rounded p-4">
-      <h1 className="font-display text-xl text-slate-800 mb-3">Projects</h1>
+    <PageWrapper title="NG | Projects">
+      <h1 className="font-display text-2xl text-gray-800 mb-3 dark:text-white">
+        Projects
+      </h1>
 
-      <section
-        data-testid="project-list"
-        className="p-4 md:p-8 bg-slate-100 rounded mb-4"
-      >
+      <Section data-testid="project-list" variant="light">
         {BIO.projects.map((project) => (
-          <ProjectLink project={project} key={project.slug} />
+          <ProjectLink project={project} key={project.slug} className="mb-4" />
         ))}
-      </section>
-    </div>
+      </Section>
+    </PageWrapper>
   );
 }

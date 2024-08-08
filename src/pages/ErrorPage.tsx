@@ -17,7 +17,7 @@ export default function ErrorPage() {
     return (
       <div className="h-screen w-screen flex justify-center items-center text-center">
         <header className="flex flex-col gap-y-2">
-          <h1 className="font-display text-4xl font-bold text-slate-700">
+          <h1 className="font-display text-4xl font-bold text-gray-700">
             {error.status}
           </h1>
           <Paragraph className="font-medium text-lg">{message}</Paragraph>
@@ -36,9 +36,7 @@ export default function ErrorPage() {
   return (
     <div className="w-screen h-screen flex justify-center items-center text-center">
       <header className="flex flex-col gap-y-2">
-        <h1 className="font-display text-4xl font-bold text-slate-700">
-          Error
-        </h1>
+        <h1 className="font-display text-4xl font-bold text-gray-700">Error</h1>
         <Paragraph className="font-medium text-lg">{message}</Paragraph>
 
         <Link

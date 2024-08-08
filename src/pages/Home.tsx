@@ -1,9 +1,10 @@
 import Bio from "../components/Bio/Bio";
+import PageWrapper from "../components/PageWrapper/PageWrapper";
 
 export default function HomePage() {
   return (
-    <div className="bg-white rounded-md border p-4">
+    <PageWrapper title="NG | Portfolio">
       <Bio />
-    </div>
+    </PageWrapper>
   );
 }

@@ -4,5 +4,9 @@ import { HTMLAttributes } from "react";
 type Props = HTMLAttributes<"paragraph">;
 
 export default function Paragraph({ children, className }: Props) {
-  return <p className={clsx("mb-2 text-slate-600", className)}>{children}</p>;
+  return (
+    <p className={clsx("mb-2 text-gray-600 dark:text-gray-100", className)}>
+      {children}
+    </p>
+  );
 }

@@ -5,16 +5,17 @@ import Avatar from "../../../components/Avatar/Avatar";
 import Paragraph from "../../../components/Paragraph/Paragraph";
 import Badge from "../../../components/Badge/Badge";
 import Section from "../../../components/Section/Section";
+import PageWrapper from "../../../components/PageWrapper/PageWrapper";
 
 export default function ProjectPage() {
   const project = useLoaderData() as Project;
 
   return (
-    <div className="bg-white rounded border p-4 md:p-8">
+    <PageWrapper title={`NG | ${project.title}`}>
       <header className="mb-4">
         <Avatar path={project.logo} alt={project.title} />
 
-        <h1 className="font-display font-bold text-4xl text-slate-700">
+        <h1 className="font-display font-bold text-4xl text-gray-700 dark:text-white">
           {project.title}
         </h1>
 
@@ -23,10 +24,10 @@ export default function ProjectPage() {
         <a
           href={project.url}
           target="_blank"
-          className="inline-flex items-center gap-x-1 bg-slate-700 hover:bg-slate-800 text-white rounded px-2 py-1 mt-4"
+          className="inline-flex items-center gap-x-1 bg-gray-700 hover:bg-gray-800 text-white rounded px-3 py-2 mt-4 dark:bg-gray-100 dark:hover:bg-gray-200 dark:text-gray-900"
         >
           Visit site
-          <ExternalLink className="w-3 text-slate-50" />
+          <ExternalLink className="w-3 text-gray-50 dark:text-gray-900" />
         </a>
       </header>
 
@@ -62,6 +63,6 @@ export default function ProjectPage() {
           ))}
         </div>
       </Section>
-    </div>
+    </PageWrapper>
   );
 }

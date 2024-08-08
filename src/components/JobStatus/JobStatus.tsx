@@ -24,14 +24,14 @@ export default function JobStatus({ status = "employed" }: Props) {
         "rounded-full p-1 md:px-3 md:py-1 text-sm flex items-center justify-between gap-x-2",
         {
           "bg-green-200 text-green-900 font-medium": status === "available",
-          "bg-slate-200 text-slate-900 font-medium": status !== "available",
+          "bg-gray-200 text-gray-900 font-medium": status !== "available",
         }
       )}
     >
       <div
         className={clsx("relative h-2 w-2 rounded-full", {
           "bg-green-500": status === "available",
-          "bg-slate-500": status !== "available",
+          "bg-gray-500": status !== "available",
         })}
       >
         {status === "available" && (

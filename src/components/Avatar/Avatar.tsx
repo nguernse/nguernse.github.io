@@ -30,7 +30,7 @@ export default function Avatar({
 
   return (
     <div
-      className={clsx("inline-block rounded-full bg-slate-50", className)}
+      className={clsx("inline-block rounded-full bg-gray-50", className)}
       style={{
         width: `${dimensions}px`,
         height: `${dimensions}px`,

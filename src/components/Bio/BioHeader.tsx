@@ -22,9 +22,9 @@ export default function BioHeader({
   jobStatus,
 }: Props) {
   return (
-    <header data-testid="bio-header" className="mb-4 md:p-8">
+    <header data-testid="bio-header" className="mb-4 md:px-8 md:pb-8">
       <div className="flex justify-between items-center mb-4 md:mb-8">
-        <span className="text-slate-600">{jobTitle}</span>
+        <span className="text-gray-600 dark:text-gray-100">{jobTitle}</span>
 
         <JobStatus status={jobStatus} />
       </div>
@@ -34,19 +34,19 @@ export default function BioHeader({
           path={profile}
           alt={name}
           size="xl"
-          className="md:order-1 mx-auto shrink-0 border-[15px] border-slate-100"
+          className="md:order-1 mx-auto shrink-0 border-[15px] border-gray-100 dark:border-gray-700"
         />
 
         <div>
-          <h1 className="font-display font-bold text-2xl md:text-4xl text-slate-900 text-center md:text-left">
+          <h1 className="font-display font-bold text-2xl md:text-4xl text-gray-900 text-center md:text-left dark:text-white">
             {name}
           </h1>
 
-          <Paragraph className="my-3 text-base md:text-lg text-center md:text-left">
+          <Paragraph className="my-3 text-base md:text-lg text-center md:text-left dark:text-white">
             {about}
           </Paragraph>
 
-          <BioSocials socials={socials} />
+          <BioSocials socials={socials} className="mt-4" />
         </div>
       </div>
     </header>
