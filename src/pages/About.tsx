@@ -1,6 +1,7 @@
 import Avatar from "../components/Avatar/Avatar";
 import Badge from "../components/Badge/Badge";
 import AvailableStatement from "../components/Bio/AvailableStatement";
+import BioExperience from "../components/Bio/BioExperience";
 import BioSocials from "../components/Bio/BioSocials";
 import EmployedStatement from "../components/Bio/EmploymentStatement";
 import FunStatement from "../components/Bio/FunStatement";
@@ -36,6 +37,11 @@ export default function AboutPage() {
       <Section>
         <BioSocials socials={BIO.socials} />
       </Section>
+
+      <BioExperience
+        work={BIO.workExperience}
+        volunteer={BIO.volunteerExperience}
+      />
 
       <Section variant="light" title="This Site Uses">
         <div className="flex flex-wrap gap-2">
