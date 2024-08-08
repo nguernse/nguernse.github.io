@@ -1,7 +1,5 @@
 import { createHashRouter } from "react-router-dom";
 
-import RootLayout from "./layouts/RootLayout";
-
 import HomePage from "./pages/Home";
 import NotFoundPage from "./pages/NotFound";
 import ProjectsPage from "./pages/Projects/Projects";
@@ -13,14 +11,10 @@ import AboutPage from "./pages/About";
 
 const router = createHashRouter([
   {
-    element: <RootLayout />,
-    errorElement: <ErrorPage />,
-    children: [{ path: "/", element: <HomePage /> }],
-  },
-  {
     element: <PageLayout />,
     errorElement: <ErrorPage />,
     children: [
+      { path: "/", element: <HomePage /> },
       {
         path: "/about",
         element: <AboutPage />,
