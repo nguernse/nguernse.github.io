@@ -19,7 +19,13 @@ export default function BioSocials({ socials, className }: Props) {
         href={socials.linkedin.url}
         target="_blank"
       >
-        <img src={socials.linkedin.image} width={18} height={18} alt="" />
+        <img
+          src={socials.linkedin.image}
+          width={18}
+          height={18}
+          alt=""
+          aria-hidden={true}
+        />
         <span className="hidden md:inline-block">{socials.linkedin.label}</span>
       </a>
 
@@ -28,7 +34,13 @@ export default function BioSocials({ socials, className }: Props) {
         href={socials.github.url}
         target="_blank"
       >
-        <img src={socials.github.image} width={18} height={18} alt="" />
+        <img
+          src={socials.github.image}
+          width={18}
+          height={18}
+          alt=""
+          aria-hidden={true}
+        />
         <span className="hidden md:inline-block">{socials.github.label}</span>
       </a>
     </div>

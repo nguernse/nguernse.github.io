@@ -8,9 +8,22 @@ export default function ThemeSwitch() {
     <button
       onClick={toggleTheme}
       className="inline-flex items-center justify-center w-7 h-7 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800"
+      aria-label={
+        theme === "dark" ? "Switch to light theme" : "Switch to dark theme"
+      }
+      type="button"
     >
-      {theme === "light" && <MoonStar className="w-5" />}
-      {theme === "dark" && <Sun className="w-5" />}
+      {theme === "light" && (
+        <MoonStar
+          className="w-5"
+          aria-hidden={true}
+          role="img"
+          focusable={false}
+        />
+      )}
+      {theme === "dark" && (
+        <Sun className="w-5" aria-hidden={true} role="img" focusable={false} />
+      )}
     </button>
   );
 }
