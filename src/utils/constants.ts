@@ -159,7 +159,7 @@ export const BIO: Bio = {
       blurb: 'A game to test your keyboard skills',
       details: [
         'I had been developing in Vue 2 for a couple years and recently Vue 3 was released. What better way to learn the new composition API than developing a small web game!',
-        "Down Down Up is a game to tests how quickly a user can type out the correct combination of keyboard arrows. I also added a secret game mode to test the user's ability to consecutively hit combos. Every incorrect entry reduces your existing time, adding an element of urgency for accuracy."
+        "Down Down Up is a game to test how quickly a user can type out the correct combination of keyboard arrows. I also added a secret game mode to test the user's ability to consecutively hit combos. Every incorrect entry reduces your existing time, adding an element of urgency for accuracy."
       ],
       technologies: [
         "TypeScript", "Vue", "CSS", "HTML", "JavaScript"
